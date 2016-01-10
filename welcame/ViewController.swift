@@ -17,10 +17,18 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         
         // MapViewを生成する.
-        gmaps = GMSMapView(frame: CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height))
+        let camera = GMSCameraPosition.cameraWithLatitude(-33.86,longitude: 151.20, zoom: 6)
+        let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        mapView.myLocationEnabled = true
+        self.view = mapView
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
         
         // MapViewをviewに追加する.
-        self.view.addSubview(gmaps)
+        marker.map = mapView
         
     }
     
