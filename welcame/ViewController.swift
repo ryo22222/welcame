@@ -22,13 +22,21 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         mapView.myLocationEnabled = true
         self.view = mapView
         
+        // 東京タワー
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake(35.658581, 139.745433)
         marker.title = "ピンに出るタイトル"
         marker.snippet = "ピンに出る詳細"
         
+        // 六本木ヒルズ
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2DMake(35.660464, 139.729249)
+        marker2.title = "ピンに出るタイトル"
+        marker2.snippet = "ピンに出る詳細"
+        
         // MapViewをviewに追加する.
         marker.map = mapView
+        marker2.map = mapView
         
     }
     
