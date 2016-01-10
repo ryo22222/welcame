@@ -21,6 +21,15 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         btn.layer.position = CGPoint(x: 100, y: 100)
         btn.addTarget(self, action: "onClick", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(btn)
+        
+        // buttonを設置
+        let btn2 = UIButton(frame: CGRectMake(0, 0, 100, 30))
+        btn2.setTitle("Push", forState: UIControlState.Normal)
+        btn2.backgroundColor = UIColor.redColor()
+        btn2.layer.position = CGPoint(x: 100, y: 300)
+        btn2.addTarget(self, action: "onClick2", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(btn2)
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,4 +41,11 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         let second = gmapViewController()
         self.presentViewController(second, animated: true, completion: nil)
     }
+    
+    // buttonをタップしたときのアクション
+    func onClick2() {
+        let camera = cameraViewController()
+        self.presentViewController(camera, animated: true, completion: nil)
+    }
+
 }

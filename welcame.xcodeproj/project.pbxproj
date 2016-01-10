@@ -15,6 +15,7 @@
 		AA2759F71C425BD9007C5542 /* welcameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2759F61C425BD9007C5542 /* welcameTests.swift */; };
 		AA275A021C425BD9007C5542 /* welcameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA275A011C425BD9007C5542 /* welcameUITests.swift */; };
 		AAD0ED961C4287B000A02EAA /* gmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0ED951C4287B000A02EAA /* gmapViewController.swift */; };
+		AAD0ED981C428A2200A02EAA /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0ED971C428A2200A02EAA /* camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AA275A011C425BD9007C5542 /* welcameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcameUITests.swift; sourceTree = "<group>"; };
 		AA275A031C425BD9007C5542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAD0ED951C4287B000A02EAA /* gmapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gmapViewController.swift; sourceTree = "<group>"; };
+		AAD0ED971C428A2200A02EAA /* camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = camera.swift; sourceTree = "<group>"; };
 		B07E450E313306AD3C18F6D4 /* Pods_welcame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_welcame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			children = (
 				AA2759E11C425BD9007C5542 /* AppDelegate.swift */,
 				AA2759E31C425BD9007C5542 /* ViewController.swift */,
+				AAD0ED971C428A2200A02EAA /* camera.swift */,
 				AAD0ED951C4287B000A02EAA /* gmapViewController.swift */,
 				AA2759E51C425BD9007C5542 /* Main.storyboard */,
 				AA2759E81C425BD9007C5542 /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 				TargetAttributes = {
 					AA2759DD1C425BD9007C5542 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VBM346473M;
 					};
 					AA2759F11C425BD9007C5542 = {
 						CreatedOnToolsVersion = 7.2;
@@ -332,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD0ED981C428A2200A02EAA /* camera.swift in Sources */,
 				AA2759E41C425BD9007C5542 /* ViewController.swift in Sources */,
 				AAD0ED961C4287B000A02EAA /* gmapViewController.swift in Sources */,
 				AA2759E21C425BD9007C5542 /* AppDelegate.swift in Sources */,
@@ -477,10 +482,13 @@
 			baseConfigurationReference = 177F5E8B3B4FBAB7DFC3C1A6 /* Pods-welcame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = welcame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ryo.welcame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -489,10 +497,13 @@
 			baseConfigurationReference = 782A31D5CD87E31DBEFD7F25 /* Pods-welcame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = welcame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ryo.welcame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
