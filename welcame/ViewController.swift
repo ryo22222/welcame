@@ -7,51 +7,20 @@
 //
 
 import UIKit
-import CoreLocation
 
-class ViewController: UIViewController,GMSMapViewDelegate,CLLocationManagerDelegate {
+class ViewController: UIViewController, GMSMapViewDelegate {
     
-    var calloutview: SMCalloutView?
-    var lm: CLLocationManager!
-    let defaultRadius = 300
-    
-    @IBOutlet var mapview : GMSMapView
-    @IBOutlet var gadbnrview : GADBannerView
+    var gmaps : GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        mapview.myLocationEnabled = true
-        mapview.delegate = self
         
-        lm = CLLocationManager()
-        lm.delegate = self
-        lm.desiredAccuracy = kCLLocationAccuracyBest
-        lm.requestAlwaysAuthorization()
-        lm.distanceFilter = 300
-        lm.startUpdatingLocation()
-        //startLocation()
-    }
-    
-    func startLocation(){
-        //NSLog("aaaaaa")
-        lm.startUpdatingLocation()
-    }
-    
-    func stopLocation(){
+        // MapViewを生成する.
+        gmaps = GMSMapView(frame: CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height))
         
-    }
-    
-    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!){
-        //NSLog("bbb")
-        var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude:newLocation.coordinate.latitude,longitude:newLocation.coordinate.longitude)
-        var now :GMSCameraPosition = GMSCameraPosition.cameraWithLatitude(coordinate.latitude,longitude:coordinate.longitude,zoom:17)
-        mapview.camera = now
+        // MapViewをviewに追加する.
+        self.view.addSubview(gmaps)
         
-    }
-    
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!){
-        //NSLog("ccc")
     }
     
     override func didReceiveMemoryWarning() {

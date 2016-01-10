@@ -14,7 +14,6 @@
 		AA2759EC1C425BD9007C5542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2759EA1C425BD9007C5542 /* LaunchScreen.storyboard */; };
 		AA2759F71C425BD9007C5542 /* welcameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2759F61C425BD9007C5542 /* welcameTests.swift */; };
 		AA275A021C425BD9007C5542 /* welcameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA275A011C425BD9007C5542 /* welcameUITests.swift */; };
-		F4754865256C4F2D4F1EEFF0 /* Pods_welcame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07E450E313306AD3C18F6D4 /* Pods_welcame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,7 @@
 		AA2759FD1C425BD9007C5542 /* welcameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = welcameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA275A011C425BD9007C5542 /* welcameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcameUITests.swift; sourceTree = "<group>"; };
 		AA275A031C425BD9007C5542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA275A0F1C4260FE007C5542 /* welcame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "welcame-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAD0ED931C4267BE00A02EAA /* welcame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "welcame-Bridging-Header.h"; sourceTree = "<group>"; };
 		B07E450E313306AD3C18F6D4 /* Pods_welcame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_welcame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4754865256C4F2D4F1EEFF0 /* Pods_welcame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +108,8 @@
 				AA2759E51C425BD9007C5542 /* Main.storyboard */,
 				AA2759E81C425BD9007C5542 /* Assets.xcassets */,
 				AA2759EA1C425BD9007C5542 /* LaunchScreen.storyboard */,
-				AA275A0F1C4260FE007C5542 /* welcame-Bridging-Header.h */,
 				AA2759ED1C425BD9007C5542 /* Info.plist */,
+				AAD0ED931C4267BE00A02EAA /* welcame-Bridging-Header.h */,
 			);
 			path = welcame;
 			sourceTree = "<group>";
@@ -477,6 +475,7 @@
 			baseConfigurationReference = 177F5E8B3B4FBAB7DFC3C1A6 /* Pods-welcame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = welcame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ryo.welcame;
@@ -490,6 +489,7 @@
 			baseConfigurationReference = 782A31D5CD87E31DBEFD7F25 /* Pods-welcame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = welcame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ryo.welcame;
