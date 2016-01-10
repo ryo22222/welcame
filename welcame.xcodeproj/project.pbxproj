@@ -14,8 +14,12 @@
 		AA2759EC1C425BD9007C5542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2759EA1C425BD9007C5542 /* LaunchScreen.storyboard */; };
 		AA2759F71C425BD9007C5542 /* welcameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2759F61C425BD9007C5542 /* welcameTests.swift */; };
 		AA275A021C425BD9007C5542 /* welcameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA275A011C425BD9007C5542 /* welcameUITests.swift */; };
+		AA5D49571C4679440051C07D /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5D49561C4679440051C07D /* twitter.png */; };
+		AA5D495B1C467BDE0051C07D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5D495A1C467BDE0051C07D /* icon.png */; };
 		AAD0ED961C4287B000A02EAA /* gmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0ED951C4287B000A02EAA /* gmapViewController.swift */; };
 		AAD0ED981C428A2200A02EAA /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0ED971C428A2200A02EAA /* camera.swift */; };
+		AAD0ED9B1C42933900A02EAA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0ED9A1C42933900A02EAA /* ListViewController.swift */; };
+		AAD0ED9D1C42954B00A02EAA /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0ED9C1C42954B00A02EAA /* ListViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +55,12 @@
 		AA2759FD1C425BD9007C5542 /* welcameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = welcameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA275A011C425BD9007C5542 /* welcameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcameUITests.swift; sourceTree = "<group>"; };
 		AA275A031C425BD9007C5542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5D49561C4679440051C07D /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = ../../../Downloads/twitter.png; sourceTree = "<group>"; };
+		AA5D495A1C467BDE0051C07D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../Downloads/icon.png; sourceTree = "<group>"; };
 		AAD0ED951C4287B000A02EAA /* gmapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gmapViewController.swift; sourceTree = "<group>"; };
 		AAD0ED971C428A2200A02EAA /* camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = camera.swift; sourceTree = "<group>"; };
+		AAD0ED9A1C42933900A02EAA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		AAD0ED9C1C42954B00A02EAA /* ListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
 		B07E450E313306AD3C18F6D4 /* Pods_welcame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_welcame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,10 +116,14 @@
 			children = (
 				AA2759E11C425BD9007C5542 /* AppDelegate.swift */,
 				AA2759E31C425BD9007C5542 /* ViewController.swift */,
+				AAD0ED9A1C42933900A02EAA /* ListViewController.swift */,
+				AAD0ED9C1C42954B00A02EAA /* ListViewController.storyboard */,
 				AAD0ED971C428A2200A02EAA /* camera.swift */,
 				AAD0ED951C4287B000A02EAA /* gmapViewController.swift */,
 				AA2759E51C425BD9007C5542 /* Main.storyboard */,
 				AA2759E81C425BD9007C5542 /* Assets.xcassets */,
+				AA5D49561C4679440051C07D /* twitter.png */,
+				AA5D495A1C467BDE0051C07D /* icon.png */,
 				AA2759EA1C425BD9007C5542 /* LaunchScreen.storyboard */,
 				AA2759ED1C425BD9007C5542 /* Info.plist */,
 			);
@@ -263,7 +275,10 @@
 			files = (
 				AA2759EC1C425BD9007C5542 /* LaunchScreen.storyboard in Resources */,
 				AA2759E91C425BD9007C5542 /* Assets.xcassets in Resources */,
+				AA5D495B1C467BDE0051C07D /* icon.png in Resources */,
+				AA5D49571C4679440051C07D /* twitter.png in Resources */,
 				AA2759E71C425BD9007C5542 /* Main.storyboard in Resources */,
+				AAD0ED9D1C42954B00A02EAA /* ListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD0ED981C428A2200A02EAA /* camera.swift in Sources */,
+				AAD0ED9B1C42933900A02EAA /* ListViewController.swift in Sources */,
 				AA2759E41C425BD9007C5542 /* ViewController.swift in Sources */,
 				AAD0ED961C4287B000A02EAA /* gmapViewController.swift in Sources */,
 				AA2759E21C425BD9007C5542 /* AppDelegate.swift in Sources */,
@@ -489,6 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ryo.welcame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -504,6 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ryo.welcame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
